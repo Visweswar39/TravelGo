@@ -35,7 +35,7 @@ const Discover = () => {
     setAddress(text);
     // get host from localhost:19002 above the qrcode
     if (text.length > 2) {
-      const endpoint = `https://api.geoapify.com/v1/geocode/autocomplete?text=${text}&apiKey=f00f762c204341a1b9fe42b442225891`;
+      const endpoint = `https://api.geoapify.com/v1/geocode/autocomplete?text=${text}&apiKey=`;
       let res = await fetch(endpoint);
       if (res) {
         let resultData = await res.json();
